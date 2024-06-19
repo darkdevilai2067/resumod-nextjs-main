@@ -55,9 +55,10 @@ const Reviews: React.FC = () => {
       </div>
       <div className="lg:w-[calc(100%-400px)] xl:w-[calc(100%-500px)] w-full">
         <div className="reviews-container md:grid grid-cols-1 lg:grid-cols-2 gap-10 overflow-hidden">
-          <div className="reviews-inner slide-up mt-20 !hidden lg:block">
+          
+          <div className="review-slide">
             {reviews.map((review) => (
-              <div className="review-item mb-10 rounded-[2rem] bg-white p-8" key={review.id}>
+              <div className="mb-10 rounded-[2rem] bg-white p-8" key={review.id}>
                 <div>
                   <div className="text-xl font-medium">{review.title}</div>
                   <div>
@@ -72,9 +73,10 @@ const Reviews: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className="reviews-inner slide-down mt-20">
+          
+          <div className="review-slide2">
             {reviews2.map((review) => (
-              <div className="review-item mb-10 rounded-[2rem] bg-white p-8" key={review.id}>
+              <div className=" mb-10 rounded-[2rem] bg-white p-8" key={review.id}>
                 <div>
                   <div className="text-xl font-medium">{review.title}</div>
                   <div>

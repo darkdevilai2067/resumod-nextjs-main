@@ -216,92 +216,86 @@ body {
   }
 }
 
-
-
-.reviews-container {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
+.first-slide {
+  animation: slide1 7s ease-in-out infinite;
 }
 
-.reviews-inner {
-  display: flex;
-  flex-direction: column;
+.second-slide {
+  animation: slide2 7s ease-in-out infinite;
+  animation-delay: -3.5s;
 }
 
-.slide-up {
-  animation: scroll-up 20s linear infinite;
+.third-slide {
+  animation-delay: -3s;
+  animation: slide3 7s ease-in-out infinite;
 }
 
-.slide-down {
-  animation: scroll-down 20s linear infinite;
+.review-slide {
+  animation: slide4 7s ease-in-out infinite;
 }
 
-@keyframes scroll-up {
+.review-slide2 {
+  animation: slide5 7s ease-in-out infinite;
+  animation-delay: -3.5s;
+}
+
+
+@keyframes slide1 {
   0% {
-    transform: translateY(100%);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(0);
   }
 }
 
-@keyframes scroll-down {
+@keyframes slide2 {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(0);
   }
 }
 
-.review-item {
-  flex-shrink: 0;
-}
-
-.templates {
-  overflow: hidden;
-  position: relative;
-}
-
-.first,
-.second {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.first {
-  animation: slide-bottom-to-top 20s linear infinite;
-}
-
-.second {
-  display: flex;
-  flex-direction: column;
-  animation: slide-top-to-bottom 20s linear infinite;
-}
-
-@keyframes slide-bottom-to-top {
+@keyframes slide3 {
   0% {
-    transform: translateY(100%);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(0);
   }
 }
 
-@keyframes slide-top-to-bottom {
+@keyframes slide4 {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(0);
   }
 }
 
-.template-item {
-  flex-shrink: 0;
-  margin-bottom: 2rem;
+@keyframes slide5 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
