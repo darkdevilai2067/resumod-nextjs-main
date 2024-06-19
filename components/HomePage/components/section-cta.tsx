@@ -19,8 +19,8 @@ const SectionCTA: React.FC = () => {
                 Save time by using bullet-point and skill suggestions based on your target job. Manage multiple resumes
                 for different jobs. Convert your LinkedIn profile into a brand-new modern resume.
               </p>
-              <div className="flex items-center space-x-5 mt-12">
-                <Button>Create Your Resume</Button>
+              <div className="flex small:flex-wrap items-center space-x-5 mt-12">
+                <Button className="">Create Your Resume</Button>
                 <Button variant="outline">Resume Examples</Button>
               </div>
             </div>

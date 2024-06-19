@@ -18,7 +18,7 @@ const BuilderFeatures: React.FC = () => {
         <div className="container">
           <h2 className="heading">Our Features</h2>
           <Tabs defaultValue="clickResumes">
-            <TabsList className="flex bg-secondary max-w-[934px] mx-auto mb-20 mt-12">
+            <TabsList className="flex bg-secondary max-w-[934px] mx-auto mb-20 mt-12 overflow-x-auto">
               <TabsTrigger value="clickResumes">Click Resumes</TabsTrigger>
               <TabsTrigger value="aiSuggestions">AI Suggestions</TabsTrigger>
               <TabsTrigger value="enchancedResumes">Enhanced Resumes </TabsTrigger>
