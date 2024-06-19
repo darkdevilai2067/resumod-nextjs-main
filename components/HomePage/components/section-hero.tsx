@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            <div className="templates relative flex h-screen small:h-auto w-full items-center justify-between gap-10 min-h-auto lg:min-h-[57rem]">
+            <div className="templates relative flex h-screen small:h-auto w-full items-center justify-between gap-10 min-h-auto lg:min-h-[57rem] small:mt-20">
               <div>
                 <div className="max-w-[31.4rem]">
                   <div className="first-slide">

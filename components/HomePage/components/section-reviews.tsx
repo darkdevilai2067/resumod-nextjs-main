@@ -46,17 +46,17 @@ const Reviews: React.FC = () => {
   <div className="container max-w-[1360px] rounded-[3rem] bg-gray">
     <div className="flex small:flex-wrap">
       <div className="lg:w-[400px] xl:w-[500px] w-full mt-20">
-        <h2 className="heading !text-left">
+        <h2 className="heading md:text-left">
           Reviewed by the community. Trusted by professionals.
         </h2>
-        <div className="mt-12 mb-6 text-3xl font-bold">4.7 out of 5</div>
-        <Image src="/images/stars.svg" alt="" width={170} height={32} className="" />
-        <Image src="/images/trustpilot-logo.svg" alt="" width={180} height={51} className="mt-8" />
+        <div className="mt-12 mb-6 text-3xl font-bold small:text-center">4.7 out of 5</div>
+        <Image src="/images/stars.svg" alt="" width={170} height={32} className="small:mx-auto" />
+        <Image src="/images/trustpilot-logo.svg" alt="" width={180} height={51} className="mt-8 small:mx-auto small:max-w-[4]" />
       </div>
       <div className="lg:w-[calc(100%-400px)] xl:w-[calc(100%-500px)] w-full">
         <div className="reviews-container md:grid grid-cols-1 lg:grid-cols-2 gap-10 overflow-hidden">
           
-          <div className="review-slide">
+          <div className="review-slide hidden lg:block">
             {reviews.map((review) => (
               <div className="mb-10 rounded-[2rem] bg-white p-8" key={review.id}>
                 <div>

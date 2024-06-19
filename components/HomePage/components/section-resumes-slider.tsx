@@ -49,8 +49,6 @@ const ResumesSlider: React.FC = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
           <div className="mt-5 text-center">
             <Button className="text-center">Select Templates</Button>

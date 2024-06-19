@@ -29,7 +29,7 @@ const BuilderFeatures: React.FC = () => {
             <TabsContent value="clickResumes">
               <div className="md:grid md:grid-cols-2 small:flex small:flex-wrap-reverse	 items-center">
                 <div>
-                  <h2 className="text-5xl font-recoleta font-medium mb-6">Why is Resumod the best online Resume Builder?</h2>
+                  <h2 className="text-4xl lg:text-5xl font-recoleta font-medium mb-6 ">Why is Resumod the best online Resume Builder?</h2>
                   <p className="text-xl font-medium mb-5">
                     Centralize all your contracts on a secure platform and improve <br /> your follow-up with our automatic
                     reminders.
@@ -44,7 +44,7 @@ const BuilderFeatures: React.FC = () => {
                   </ul>
                   <Button variant="dark">Build My Resume</Button>
                 </div>
-                <div>
+                <div className="small:mx-auto">
                   <Image src="/images/feature1.png" alt="hero-image" width={562} height={514} className="small:mb-12" />
                 </div>
               </div>

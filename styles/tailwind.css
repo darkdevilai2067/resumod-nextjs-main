@@ -192,27 +192,16 @@ body {
   @apply mb-5 text-center font-recoleta text-6xl font-semibold;
 }
 
-@media (max-width: 1280px) {
-  .heading {
-    @apply text-5xl;
-  }
-}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
   .heading {
     @apply text-4xl;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .heading {
-    @apply text-3xl;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .heading {
-    @apply text-2xl;
+    @apply text-3xl;
   }
 }
 
@@ -238,7 +227,6 @@ body {
   animation: slide5 7s ease-in-out infinite;
   animation-delay: -3.5s;
 }
-
 
 @keyframes slide1 {
   0% {
