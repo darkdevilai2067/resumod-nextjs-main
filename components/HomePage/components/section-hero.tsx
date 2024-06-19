@@ -54,14 +54,14 @@ const Hero: React.FC = () => {
                 <Image src="/images/stars.svg" alt="star" width={170} height={32} />
                 <span>4.8</span>
               </div>
-              <div className="flex items-center small:mb-42 small:justify-center font-bold tracking-[0.144px] md:text-lg lg:text-xl">
+              <div className="flex items-center small:justify-center font-bold tracking-[0.144px] md:text-lg lg:text-xl">
                 Based on 611 reviews
                 <Image src="/images/trustpilot-star.svg" alt="arrow-right" width={31} height={31} className="mx-2" />
                 Trustpilot
               </div>
             </div>
 
-            <div className="templates relative flex h-screen w-full items-center justify-between gap-10 md:min-h-[60rem] lg:min-h-[57rem]">
+            <div className="templates relative flex h-screen small:h-auto w-full items-center justify-between gap-10 min-h-auto lg:min-h-[57rem]">
               <div>
                 <div className="max-w-[31.4rem]">
                   <div className="first-slide">
