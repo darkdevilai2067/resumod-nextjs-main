@@ -1,0 +1,307 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dot {
+  @apply mr-5 inline-flex h-[16px] w-[16px] items-center rounded-full bg-secondary;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 221.21 83.19% 53.33%;
+    --primary-foreground: 210 40% 98%;
+
+    --gray: 228 33.33% 97.06%;
+
+    --dark: 240 5.88% 10%;
+
+    --secondary: 158.8 76.53% 38.43%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/Recoleta-Regular.eot");
+  src:
+    local("Recoleta Regular"),
+    local("Recoleta-Regular"),
+    url("/fonts/Recoleta/Recoleta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Recoleta/Recoleta-Regular.woff") format("woff"),
+    url("/fonts/Recoleta/Recoleta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/Recoleta-Medium.eot");
+  src:
+    local("Recoleta Medium"),
+    local("Recoleta-Medium"),
+    url("/fonts/Recoleta/Recoleta-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Recoleta/Recoleta-Medium.woff") format("woff"),
+    url("/fonts/Recoleta/Recoleta-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/Recoleta-Thin.eot");
+  src:
+    local("Recoleta Thin"),
+    local("Recoleta-Thin"),
+    url("/fonts/Recoleta/Recoleta-Thin.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Recoleta/Recoleta-Thin.woff") format("woff"),
+    url("/fonts/Recoleta/Recoleta-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/Recoleta-Black.eot");
+  src:
+    local("Recoleta Black"),
+    local("Recoleta-Black"),
+    url("/fonts/Recoleta/Recoleta-Black.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Recoleta/Recoleta-Black.woff") format("woff"),
+    url("/fonts/Recoleta/Recoleta-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/Recoleta-SemiBold.eot");
+  src:
+    local("Recoleta SemiBold"),
+    local("Recoleta-SemiBold"),
+    url("/fonts/Recoleta/Recoleta-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Recoleta/Recoleta-SemiBold.woff") format("woff"),
+    url("/fonts/Recoleta/Recoleta-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/Recoleta-Bold.eot");
+  src:
+    local("Recoleta Bold"),
+    local("Recoleta-Bold"),
+    url("/fonts/Recoleta/Recoleta-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Recoleta/Recoleta-Bold.woff") format("woff"),
+    url("/fonts/Recoleta/Recoleta-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/Recoleta-Light.eot");
+  src:
+    local("Recoleta Light"),
+    local("Recoleta-Light"),
+    url("/fonts/Recoleta/Recoleta-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Recoleta/Recoleta-Light.woff") format("woff"),
+    url("/fonts/Recoleta/Recoleta-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #18181b;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.bg-primary {
+  background-color: hsl(var(--primary));
+}
+.text-primary {
+  color: hsl(var(--primary));
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.widget-heading {
+  @apply mb-5 font-recoleta text-xl font-medium uppercase text-[#a3a3a4];
+}
+
+.heading {
+  @apply mb-5 text-center font-recoleta text-6xl font-semibold;
+}
+
+@media (max-width: 1280px) {
+  .heading {
+    @apply text-5xl;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heading {
+    @apply text-4xl;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    @apply text-3xl;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading {
+    @apply text-2xl;
+  }
+}
+
+
+
+.reviews-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.reviews-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-up {
+  animation: scroll-up 20s linear infinite;
+}
+
+.slide-down {
+  animation: scroll-down 20s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.review-item {
+  flex-shrink: 0;
+}
+
+.templates {
+  overflow: hidden;
+  position: relative;
+}
+
+.first,
+.second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.first {
+  animation: slide-bottom-to-top 20s linear infinite;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  animation: slide-top-to-bottom 20s linear infinite;
+}
+
+@keyframes slide-bottom-to-top {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slide-top-to-bottom {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.template-item {
+  flex-shrink: 0;
+  margin-bottom: 2rem;
+}
