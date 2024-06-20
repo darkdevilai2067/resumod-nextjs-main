@@ -37,11 +37,11 @@ const WhyResumod: React.FC = () => {
     },
   ]
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex === null || prevIndex === data.length - 1 ? 0 : prevIndex + 1))
-    }, 5000)
+ //   const interval = setInterval(() => {
+   //   setActiveIndex((prevIndex) => (prevIndex === null || prevIndex === data.length - 1 ? 0 : prevIndex + 1))
+   // }, 5000)
 
-    return () => clearInterval(interval)
+   // return () => clearInterval(interval)
   }, [data.length])
 
   const handleClick = (index: number) => {
@@ -55,23 +55,23 @@ const WhyResumod: React.FC = () => {
           <h2 className="heading">
             Why is Resumod the best online <br /> Resumod Builder
           </h2>
-          <div className="md:flex items-center justify-between">
+          <div className="flex flex-wrap lg:flex-wrap items-center justify-center lg:justify-between gap-20 small:gap-0 mt-20">
             <div>
               <Image src="/images/why-resumod-1.png" alt="" width={580} height={603} className="" />
             </div>
-            <div className="w-full max-w-[441px] rounded-[12px] bg-white py-8">
+            <div className="w-full max-w-[441px] rounded-[12px] bg-white py-8 small:mt-12">
               {data.map((item, index) => (
                 <div
                   key={index}
                   className={`relative w-full rounded-[1.4rem] p-8 ${
-                    index === activeIndex ? "-left-12 sm:w-[495px] bg-primary text-white" : "mx-auto max-w-[38rem]"
+                    index === activeIndex ? "-left-12 sm:w-[495px] bg-primary text-white small:w-[107%] small:-left-6" : "mx-auto max-w-[38rem]"
                   }`}
                   onClick={() => handleClick(index)}
                 >
-                  <div className="mx-auto max-w-[38rem]">
+                  <div className="mx-auto max-w-[38rem] w-full">
                     <div
-                      className={`icon absolute left-0 top-6 flex size-[34px]  items-center justify-center rounded-full ${
-                        index === activeIndex ? "left-16 bg-white" : "bg-primary"
+                      className={`icon absolute left-0 top-6 flex size-[34px] items-center justify-center  xs-mobile:left-[1.2rem] rounded-full ${
+                        index === activeIndex ? "left-16 small:left-12 bg-white " : "bg-primary"
                       }`}
                     >
                       <Image

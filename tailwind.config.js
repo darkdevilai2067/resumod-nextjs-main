@@ -115,6 +115,7 @@ module.exports = {
       screens: {
         'small': {'max': '768px'},
         'mobile': {'max': '576px'},
+        'xs-mobile': {'max': '480px'},
     },
     
     },

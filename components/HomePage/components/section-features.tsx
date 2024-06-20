@@ -60,7 +60,7 @@ const SectionFeatures: React.FC = () => {
   ]
   return (
     <>
-      <section className="py-32">
+      <section className="py-32 small:pt-32 small:pb-0">
         <div className="container mb-20">
           <div className="mx-auto max-w-[730px]">
             <h2 className="heading">Feature Guide & What’s New</h2>
@@ -70,11 +70,11 @@ const SectionFeatures: React.FC = () => {
             </p>
           </div>
           <div>
-            <div className="md:grid md:grid-cols-2 lg:grid-cols-2 gap-20 lg:gap-30 mt-20">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-20 lg:gap-30 mt-20 small:grid-cols-1 small:gap-5">
               {feature.map((item, index) => (
                 <div key={index}>
                   <div>
-                    <div className="max-w-[34rem] mb-10 lg:mb-28">
+                    <div className="lg:max-w-[34rem] mb-10 lg:mb-28">
                       <Image src={`/images/${item.icon}`} alt="icon" width={66} height={66} className="mb-5" />
                       <div className="mb-5 font-recoleta text-3xl font-medium">{item.title}</div>
                       <div className="text-lg">{item.description}</div>

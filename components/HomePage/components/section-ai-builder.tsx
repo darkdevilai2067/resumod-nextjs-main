@@ -42,7 +42,7 @@ const MeetResumeBuilder: React.FC = () => {
               <Image src='/images/line.svg' alt='' width={145} height={157} className="absolute right-0 top-0" />
             </div>
             <div>
-              <Image src="/images/ai-builder.svg" alt="AI Builder" width={547} height={310} />
+              <Image src="/images/ai-builder.svg" alt="AI Builder" width={547} height={310} className="small:mt-12" />
             </div>
           </div>
 

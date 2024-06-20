@@ -30,7 +30,7 @@ export function SectionFaqs() {
   ]
 
   return (
-    <section className="py-32">
+    <section className="py-32 small:pt-0 small:pb-10">
       <div className="container">
        <div>
         <h3 className="heading">
@@ -41,7 +41,7 @@ export function SectionFaqs() {
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`} className="space-y-4">
               <AccordionTrigger className="md:text-2xl !text-left  lg:text-[2.2rem]  md:text py-10">{faq.question}</AccordionTrigger>
-              <AccordionContent className="text-xl  leading-[2.6rem] -mt-3">{faq.answer}</AccordionContent>
+              <AccordionContent className="text-xl  leading-[2.6rem] -mt-3 small:text-lg">{faq.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

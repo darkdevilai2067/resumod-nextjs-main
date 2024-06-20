@@ -1,9 +1,9 @@
+import { ChevronRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { Button } from "components/ui/button"
 import { Separator } from "components/ui/separator"
-import { ChevronRight } from "lucide-react"
 
 const Footer: React.FC = () => {
   const blogs = [
@@ -406,7 +406,7 @@ const Footer: React.FC = () => {
               {social.map((item, index) => (
                 <li key={index} className="mr-5 last:mr-0">
                   <Link href={item.link} className="text-white border border-[#626264] border-solid rounded-2xl small:rounded-full small:size-20 flex items-center px-6 py-5">
-                    <Image src={`/images/${item.icon}`} alt={item.label} width={20} height={20} className="mr-3" />
+                    <Image src={`/images/${item.icon}`} alt={item.label} width={20} height={20} className="mr-3 small:size-20" />
                     <span className="small:hidden">{item.label}</span>
                   </Link>
                 </li>
